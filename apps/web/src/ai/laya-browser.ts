@@ -543,34 +543,37 @@ async function downloadChunk(
   if (!response.ok || !response.body) {
     throw new LayaBrowserError('download-failed', `Laya model part ${index + 1} of ${count} failed (${response.status}).`);
   }
-  const advertisedSize = Number(response.headers.get('content-length'));
-  if (Number.isFinite(advertisedSize) && advertisedSize > 0 && advertisedSize !== chunk.bytes) {
-    throw new LayaBrowserError('integrity-failed', `Laya model part ${index + 1} size does not match its manifest.`);
-  }
+  // Content-Length describes the compressed transfer when a CDN uses gzip/br.
+  // Fetch exposes decoded bytes, so integrity must use the actual body length
+  // and the manifest checksum, not transport metadata (which may be hidden).
   const reader = response.body.getReader();
-  const pieces: Uint8Array[] = [];
+  const assembled = new Uint8Array(chunk.bytes);
   let received = 0;
-  while (true) {
-    throwIfAborted(signal);
-    const next = await reader.read();
-    if (next.done) break;
-    pieces.push(next.value);
-    received += next.value.byteLength;
-    const totalReceived = receivedBefore + received;
-    onProgress({
-      progress: 0.15 + 0.75 * Math.min(1, totalReceived / totalBytes),
-      stage: 'Downloading Laya',
-      detail: `Part ${index + 1}/${count}: ${formatBytes(totalReceived)} of ${formatBytes(totalBytes)} downloaded.`,
-    });
+  try {
+    while (true) {
+      throwIfAborted(signal);
+      const next = await reader.read();
+      if (next.done) break;
+      if (received + next.value.byteLength > chunk.bytes) {
+        throw new LayaBrowserError('integrity-failed', `Laya model part ${index + 1} exceeds its expected ${formatBytes(chunk.bytes)} decoded size.`);
+      }
+      assembled.set(next.value, received);
+      received += next.value.byteLength;
+      const totalReceived = receivedBefore + received;
+      onProgress({
+        progress: 0.15 + 0.75 * Math.min(1, totalReceived / totalBytes),
+        stage: 'Downloading Laya',
+        detail: `Part ${index + 1}/${count}: ${formatBytes(totalReceived)} of ${formatBytes(totalBytes)} downloaded.`,
+      });
+    }
+  } catch (error) {
+    await reader.cancel().catch(() => undefined);
+    throw error;
+  } finally {
+    reader.releaseLock();
   }
   if (received !== chunk.bytes) {
     throw new LayaBrowserError('integrity-failed', `Laya model part ${index + 1} received ${formatBytes(received)}; expected ${formatBytes(chunk.bytes)}.`);
-  }
-  const assembled = new Uint8Array(received);
-  let offset = 0;
-  for (const piece of pieces) {
-    assembled.set(piece, offset);
-    offset += piece.byteLength;
   }
   return assembled;
 }

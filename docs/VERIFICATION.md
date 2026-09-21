@@ -2,7 +2,7 @@
 
 ## Automated checks
 
-`npm test` passes all **106 tests across 11 files**. `npm run build` passes strict TypeScript and creates a static site of **671,112,321 bytes (640 MiB)**; the largest file is 28,312,028 bytes. Vite emits its non-fatal large-chunk warning for the rendering/model bundles.
+`npm test` passes all **112 tests across 12 files**. `npm run build` passes strict TypeScript and creates a static site of **671,112,301 bytes (640 MiB)**; the largest file is 28,312,028 bytes. Vite emits its non-fatal large-chunk warning for the rendering/model bundles.
 
 The suite covers deterministic combat and replays, independent worker input streams and pause barriers, contact resolution, movement/attack buffering, fighter resource profiles, public AI observations, model prompt limits, recovery lifecycle and stale replies, sprite animation, audio/effects scheduling, and radio playback races.
 
@@ -36,6 +36,9 @@ All 12 recorded Kenney CC0 foley samples load. The radio's three licensed guitar
 Earlier browser samples on this desktop measured renderer p95 frame intervals of 7.5–10.1 ms while genuine Laya inference ran in its own worker. These measurements are host-specific. A VP9/Opus fight clip recorded successfully. Touch controls and mobile GPU support remain experimental.
 
 ## Laya and deployment-path checks
+
+The custom-domain CDN served the first model chunk with gzip `Content-Length: 14345624`, while the decoded manifest size is 25165824. The original loader incorrectly rejected the compressed transport length before reading the body. New load-path tests first reproduced that exact error for gzip/Brotli, then passed after switching to decoded-body validation. Six transport cases cover gzip, Brotli, identity/missing metadata, truncation, same-size corruption and oversized-stream cancellation. Size and SHA-256 verification remain mandatory.
+
 
 The full pinned Laya graph is genuine client-side WebGPU inference. Baseline practice is separately labelled; the hybrid opponent clearly distinguishes Laya advice from local combat choices. The root checkpoint remains passive and position-sensitive in choice probes, so WST does not claim that it is a trained fighting policy. See [runtime details and parity measurements](LAYA_BROWSER.md).
 

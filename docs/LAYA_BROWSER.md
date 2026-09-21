@@ -68,6 +68,11 @@ browser cache content-addressed: after a deployment changes a model part at the
 same static pathname, cached bytes from the old artifact cannot be combined
 with the new manifest.
 
+Size checks use the decoded Fetch response body. HTTP `Content-Length` can
+describe a smaller gzip/Brotli transfer, so it is not compared with the model
+manifest. An oversized decoded stream is cancelled immediately; truncated data
+and checksum mismatches still fail before session creation.
+
 `LayaWorkerController` resolves the manifest URL on the main thread, sends the
 absolute URL to its dedicated worker, relays progress and `CheckpointInfo`, and
 permits at most one decision at a time. Disposal, abort, or worker error
