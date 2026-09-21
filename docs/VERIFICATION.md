@@ -2,11 +2,13 @@
 
 ## Automated checks
 
-`npm test` passes all **103 tests across 10 files**. `npm run build` passes strict TypeScript and creates a static site of **671,112,527 bytes (640 MiB)**; the largest file is 28,312,028 bytes. Vite emits its non-fatal large-chunk warning for the rendering/model bundles.
+`npm test` passes all **106 tests across 11 files**. `npm run build` passes strict TypeScript and creates a static site of **671,112,321 bytes (640 MiB)**; the largest file is 28,312,028 bytes. Vite emits its non-fatal large-chunk warning for the rendering/model bundles.
 
 The suite covers deterministic combat and replays, independent worker input streams and pause barriers, contact resolution, movement/attack buffering, fighter resource profiles, public AI observations, model prompt limits, recovery lifecycle and stale replies, sprite animation, audio/effects scheduling, and radio playback races.
 
 Two regressions directly exercise the reported pull-toward-opponent symptom: held movement is not retained in the attack buffer after release/reversal, and a direction change plus attack crosses the worker boundary atomically. The latter was observed failing with `[light, advance, advance]` before the fix and passing with `[light, retreat, retreat]` after it. Attack knockback remains intentional; walking into an idle fighter does not shove them.
+
+A second reported no-hit dragging symptom was reproduced in the actual `ArenaRenderer.render()` camera path with GPU output stubbed. With player world x fixed at -2, an approaching AI moved the player's projected screen coordinate from -0.4806 to -0.0841. Pursuit also made leftward retreat appear rightward. The camera had tracked the fighters' midpoint and distance against an immobile background. Framing now anchors to the full arena instead; three tests verify idle-player screen stability, visible retreat direction and both walls remaining in frame. The production build was visually checked with active combat after this change.
 
 Replay format and storage are **v5**. Older balance versions are excluded; selected profiles, signatures and every applied worker input reconstruct the exact simulation.
 

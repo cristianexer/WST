@@ -4,6 +4,7 @@ import type { MatchState } from '../../../../packages/combat-core/src/index';
 
 import { FighterSprite } from './fighter-sprites';
 import { ArenaEffects } from './effects';
+import { arenaCameraFrame } from './arena-camera';
 
 export interface ArenaRendererOptions {
   playerColor: string;
@@ -27,8 +28,6 @@ export class ArenaRenderer {
   private readonly quality: 'high' | 'low';
   private readonly reducedMotion: boolean;
   private elapsedSeconds = 0;
-  private cameraTargetX = 0;
-  private cameraDistance = 10;
   private contextError: Error | null = null;
   private disposed = false;
   private visualPositions: { x: number; y: number }[] = [];
@@ -121,12 +120,6 @@ export class ArenaRenderer {
       });
       const leftX = this.visualPositions[0].x;
       const rightX = this.visualPositions[1].x;
-      const centre = (leftX + rightX) * 0.5;
-      const halfWidth = Math.abs(leftX - rightX) * 0.5 + 1.65;
-      const field = Math.tan(THREE.MathUtils.degToRad(this.camera.fov / 2));
-      const distance = Math.max(6.9, halfWidth / (field * this.camera.aspect));
-      this.cameraDistance = THREE.MathUtils.lerp(this.cameraDistance, distance, Math.min(1, delta * (distance > this.cameraDistance ? 15 : 2)));
-      this.cameraTargetX = THREE.MathUtils.lerp(this.cameraTargetX, centre, 1 - Math.pow(0.0001, delta));
       this.fighters[0].group.position.x = leftX;
       this.fighters[1].group.position.x = rightX;
       this.fighters[0].update(left, delta, this.visualPositions[0].y);
@@ -134,8 +127,8 @@ export class ArenaRenderer {
     }
 
     this.effects.update(delta);
-    const lookX = this.cameraTargetX;
-    this.camera.position.set(lookX, 2.25, this.cameraDistance);
+    const { x: lookX, distance } = arenaCameraFrame(this.camera.aspect, this.camera.fov);
+    this.camera.position.set(lookX, 2.25, distance);
     this.camera.lookAt(lookX, 1.1, 0);
     this.renderer.render(this.scene, this.camera);
   }
