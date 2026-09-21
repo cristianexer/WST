@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><meta charset="UTF-8"><title>WST README artwork</title>
+<style>
+@font-face{font-family:Barlow;src:url(fonts/barlow-condensed-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:Barlow;src:url(fonts/barlow-condensed-latin-500-normal.woff2);font-weight:500}
+*{box-sizing:border-box}body{margin:0;background:#0b0e13;color:#f4eddf;font-family:Barlow,sans-serif}
+#banner{position:relative;width:1080px;height:400px;overflow:hidden;background:#090d12;border:1px solid #3b3325}
+.stage{position:absolute;inset:-15px;background:linear-gradient(90deg,#080c11 5%,#080c11bb 55%,#080c1166),url(assets/summit-arena.png) center/cover;opacity:.6}
+.lines{position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 39px,#d5b97808 40px);pointer-events:none}
+.top{position:absolute;left:38px;right:38px;top:25px;display:flex;align-items:center;justify-content:space-between;font-size:12px;letter-spacing:3px;color:#c1b499}
+.top b{color:#f3d39b;font-weight:700}.top span:last-child{color:#82c9cf}.top i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#82c9cf;margin:0 8px 2px 0}
+.copy{position:absolute;left:38px;top:95px;z-index:2}.copy h1{font-size:79px;line-height:.88;letter-spacing:-1.8px;margin:0;font-weight:700}.copy h1 em{font-style:normal;color:#eac785}.copy p{font-size:18px;color:#b0b4b8;font-weight:500;letter-spacing:.4px;margin:23px 0 0}
+.rule{width:46px;height:3px;background:#89d0d7;margin-bottom:18px}.orbit{position:absolute;left:632px;top:36px;width:360px;height:360px;border:1px solid #dfb77125;border-radius:50%}.orbit:before{content:'';position:absolute;inset:18px;border:1px dashed #dfb77135;border-radius:50%}.orbit:after{content:'';position:absolute;left:175px;top:-4px;width:7px;height:7px;background:#e8c17a;border-radius:50%;box-shadow:0 0 18px #d8bb7b}
+.cast{position:absolute;left:535px;top:82px;width:511px;height:247px}.hero-card{position:absolute;top:0;width:161px;height:247px;background:#10161cef;border:1px solid #bda37155;box-shadow:0 14px 38px #0008;overflow:hidden}.hero-card:nth-child(2){left:175px;top:16px}.hero-card:nth-child(3){left:350px}
+.portrait{background-image:url(assets/roster-atlas.png);background-size:700% 300%;width:100%;aspect-ratio:1;background-repeat:no-repeat}.hero-card .portrait{position:absolute;inset:0 0 auto}.portrait.alt{opacity:0}.shade{position:absolute;top:111px;height:60px;width:100%;background:linear-gradient(transparent,#10161c)}.hero-meta{position:absolute;bottom:17px;left:14px;right:10px}.hero-meta small{display:block;font-size:9px;letter-spacing:2px;color:#dcbf85;margin-bottom:6px}.hero-meta strong{display:block;font-size:25px;line-height:1;white-space:nowrap}.hero-meta span{display:block;color:#8d959d;font-size:11px;letter-spacing:.4px;margin-top:7px}
+.bottom{position:absolute;bottom:0;left:0;right:0;height:47px;border-top:1px solid #dfba702f;background:#0b1016e8;display:flex;align-items:center;justify-content:space-between;padding:0 38px;color:#a5aeb5;font-size:11px;letter-spacing:2px}.bottom b{color:#eacb91}.bottom .tag{color:#6f7c86;font-size:10px;letter-spacing:1.5px}.sweep{position:absolute;left:0;bottom:46px;width:150px;height:1px;background:linear-gradient(90deg,transparent,#f2d49c,transparent)}
+#gallery{display:none;gap:16px;width:1148px;flex-wrap:wrap;padding:0;background:#090d12}.fighter-card{position:relative;width:372px;height:480px;border:1px solid #484136;overflow:hidden;background:#10151b}.fighter-card .portrait{height:372px}.fighter-card:after{content:'';position:absolute;left:0;right:0;top:275px;height:100px;background:linear-gradient(transparent,#10151b)}.number{position:absolute;top:19px;left:22px;padding:5px 8px;color:#d2b77e;background:#0d1215c9;border:1px solid #a68c5244;font-size:12px;letter-spacing:2px}.card-copy{position:absolute;bottom:28px;left:25px;right:20px;z-index:2}.card-copy small{display:block;font-size:11px;letter-spacing:3px;color:#9fd8dd;margin-bottom:10px}.card-copy strong{font-size:42px;line-height:1;display:block;letter-spacing:-.7px}.card-copy p{margin:13px 0 0;font-size:16px;color:#d0b47e}.card-copy p span{color:#737e86;font-size:11px;letter-spacing:1.2px;margin-right:8px}
+</style>
+<div id="banner">
+ <div class="stage"></div><div class="lines"></div><div class="orbit"></div>
+ <div class="top"><b>WST / WORLD SUMMIT TOURNAMENT</b><span><i></i>LOCAL FIRST. READY TO FIGHT.</span></div>
+ <div class="copy"><div class="rule"></div><h1>DIPLOMACY<br><em>ENDS HERE.</em></h1><p>21 delegates. One very different summit.</p></div>
+ <div class="cast"></div>
+ <div class="bottom"><span><b>21</b> FIGHTERS &nbsp; / &nbsp; <b>504</b> POSES &nbsp; / &nbsp; <b>1</b> ARENA</span><span class="tag">FICTIONAL ARCADE SATIRE · EARLY ACCESS</span></div><div class="sweep"></div>
+</div>
+<div id="gallery"></div>
+<script>
+const cast=[
+ {id:'trump',index:0,name:'TRUMP',country:'UNITED STATES',title:'THE DEALMAKER',move:'Executive Order'},
+ {id:'xi',index:1,name:'XI JINPING',country:'CHINA',title:'THE LONG GAME',move:'Five-Year Plan'},
+ {id:'meloni',index:7,name:'MELONI',country:'ITALY',title:'THE FINAL WORD',move:'Final Word'},
+ {id:'modi',index:3,name:'MODI',country:'INDIA',title:'THE GRAND ENTRANCE',move:'Summit Salute'},
+ {id:'milei',index:18,name:'MILEI',country:'ARGENTINA',title:'THE WILD CARD',move:'Wild Card'},
+ {id:'kim',index:20,name:'KIM JONG UN',country:'NORTH KOREA',title:'THE UNANNOUNCED ENTRY',move:'Grand Entrance'}
+];
+const pos=i=>`${i%7/6*100}% ${Math.floor(i/7)/2*100}%`;
+const face=(c,extra='')=>`<div class="portrait ${extra}" style="background-position:${pos(c.index)}"></div>`;
+document.querySelector('.cast').innerHTML=cast.slice(0,3).map((c,i)=>`<div class="hero-card">${face(c)}${face(cast[i+3],'alt')}<div class="shade"></div><div class="hero-meta"><small>${c.country}</small><strong>${c.name}</strong><span>${c.move}</span></div></div>`).join('');
+document.querySelector('#gallery').innerHTML=cast.map((c,i)=>`<article class="fighter-card" id="${c.id}">${face(c)}<div class="number">${String(c.index+1).padStart(2,'0')} / WST</div><div class="card-copy"><small>${c.title}</small><strong>${c.name}</strong><p><span>SIGNATURE</span>${c.move}</p></div></article>`).join('');
+window.renderFrame=t=>{
+ const phase=t/6*Math.PI*2;
+ document.querySelector('.stage').style.transform=`translateX(${Math.sin(phase)*5}px)`;
+ document.querySelector('.orbit').style.transform=`rotate(${t*60}deg)`;
+ document.querySelector('.sweep').style.transform=`translateX(${t/6*1230-150}px)`;
+ let blend=t<2.5?0:t<3?(t-2.5)*2:t<5.5?1:1-(t-5.5)*2;
+ document.querySelectorAll('.hero-card').forEach((card,i)=>{
+  card.style.transform=`translateY(${Math.sin(phase+i*.7)*4}px)`;
+  card.querySelector('.alt').style.opacity=blend;
+  const c=cast[i+(blend>=.5?3:0)];
+  card.querySelector('small').textContent=c.country;card.querySelector('strong').textContent=c.name;card.querySelector('.hero-meta span').textContent=c.move;
+ });
+};
+window.renderFrame(0);
+</script></html>

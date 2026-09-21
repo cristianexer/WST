@@ -1,72 +1,189 @@
-# WST — World Summit Tournament
+<p align="center">
+  <a href="https://cristianexer.github.io/WST/">
+    <img src="apps/web/public/assets/brand/wst-brandmark.png" width="220" alt="WST — World Summit Tournament logo">
+  </a>
+</p>
 
-A local-first, fictional arcade fighting game with a 21-person user-selected roster. React + TypeScript provide the menus; Three.js presents detailed rendered character sprites in a 2.5D arena; a dedicated Web Worker runs deterministic combat at 60 ticks/second while the main thread renders the arena. No account, API key, inference server, or runtime backend is required.
+<h1 align="center">World Summit Tournament</h1>
 
-## Run locally
+<p align="center">
+  <strong>No speeches. Just combos.</strong><br>
+  A fictional arcade showdown with 21 delegates, signature moves, and an AI opponent running in your browser.
+</p>
+
+<p align="center">
+  <a href="https://cristianexer.github.io/WST/"><strong>▶ PLAY NOW</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#quick-start">Run locally</a>
+  &nbsp; · &nbsp;
+  <a href="#controls">Controls</a>
+  &nbsp; · &nbsp;
+  <a href="docs/LAYA_BROWSER.md">Inside the AI</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-EARLY_ACCESS-10151b?style=flat-square&amp;labelColor=262b32&amp;color=d8b578" alt="Status: early access">
+  <img src="https://img.shields.io/badge/ROSTER-21_FIGHTERS-10151b?style=flat-square&amp;labelColor=262b32&amp;color=85cbd2" alt="Roster: 21 fighters">
+  <img src="https://img.shields.io/badge/COMBAT-60_HZ-10151b?style=flat-square&amp;labelColor=262b32&amp;color=d8b578" alt="Combat: 60 Hz">
+  <img src="https://img.shields.io/badge/AI-CLIENT_SIDE-10151b?style=flat-square&amp;labelColor=262b32&amp;color=85cbd2" alt="AI: client side">
+</p>
+
+<p align="center">
+  <a href="https://cristianexer.github.io/WST/">
+    <img src="docs/media/wst-banner.gif" width="1080" alt="Animated WST banner: Diplomacy ends here. Trump, Xi Jinping and Meloni transition to Modi, Milei and Kim Jong Un.">
+  </a>
+</p>
+
+## The summit has a new agenda
+
+Pick your fighter. Pick your opponent. Settle it in a best-of-three, 60-second showdown.
+
+| Bring to the arena | What you get |
+| :--- | :--- |
+| **A fighter with personality** | 21 delegates with detailed generated artwork, fictional quips and distinct stat trade-offs. |
+| **Your own signature** | One fixed special per character, with its own mechanics, release animation and sound. |
+| **Room to move** | Responsive footwork, running jumps, air steering, throws, parries and combos. A dedicated worker runs combat at 60 Hz. |
+| **An opponent that reacts** | A local combat controller reads delayed public state; experimental Laya advice runs independently on WebGPU. |
+| **A proper fight soundtrack** | Recorded guitar rock, impact and movement foley, separate music volume, and a **Your Track** local-file player. |
+| **The rematch receipts** | Training, AI Cam, deterministic replays and up to 60-second video clips. |
+
+## Meet a few of the delegates
+
+Six faces from a 21-person roster. Every fighter has **24 rendered poses** and a signature that belongs to them.
+
+<table>
+  <tr>
+    <td width="33%"><img src="docs/media/trump.png" width="300" alt="Donald Trump — The Dealmaker. Signature: Executive Order."></td>
+    <td width="33%"><img src="docs/media/xi.png" width="300" alt="Xi Jinping — The Long Game. Signature: Five-Year Plan."></td>
+    <td width="33%"><img src="docs/media/meloni.png" width="300" alt="Giorgia Meloni — The Final Word. Signature: Final Word."></td>
+  </tr>
+  <tr>
+    <td><img src="docs/media/modi.png" width="300" alt="Narendra Modi — The Grand Entrance. Signature: Summit Salute."></td>
+    <td><img src="docs/media/milei.png" width="300" alt="Javier Milei — The Wild Card. Signature: Wild Card."></td>
+    <td><img src="docs/media/kim.png" width="300" alt="Kim Jong Un — The Unannounced Entry. Signature: Grand Entrance."></td>
+  </tr>
+</table>
+
+**Power · Speed · Vitality · Stamina · Recovery**
+
+Each build spends the same 500-point stat budget, with real differences in damage, movement and resources. Power trades off against vitality. Balance is still evolving; the [matchup audit](docs/VERIFICATION.md#roster-and-balance) records the current results and limitations.
+
+<details>
+<summary><strong>Explore the full 21-fighter roster</strong></summary>
+
+| Americas | Europe | Asia & Pacific | Middle East & Africa |
+| :--- | :--- | :--- | :--- |
+| Donald Trump | Andy Burnham | Xi Jinping | Mohammed bin Salman |
+| Luiz Inácio Lula da Silva | Emmanuel Macron | Narendra Modi | Recep Tayyip Erdoğan |
+| Mark Carney | Friedrich Merz | Sanae Takaichi | Cyril Ramaphosa |
+| Claudia Sheinbaum | Giorgia Meloni | Lee Jae Myung | |
+| Javier Milei | Vladimir Putin | Prabowo Subianto | |
+| | Ursula von der Leyen | Anthony Albanese | |
+| | | Kim Jong Un | |
+
+Player and AI selections are independent. Mirror matches are supported. The cast and role labels follow the project's fictional tournament brief, not a verified directory of current officeholders.
+
+</details>
+
+## Quick start
+
+**Play instantly:** [cristianexer.github.io/WST](https://cristianexer.github.io/WST/)
+
+Or run it on your machine with Node.js 22:
 
 ```sh
+git clone https://github.com/cristianexer/WST.git
+cd WST
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. The arrival screen explains GPU/memory use before model initialization. **Initialize hybrid Laya** loads the local model package; **Enter baseline practice** selects a separately labelled heuristic opponent. Model availability and loading failures are shown honestly. Laya runs in a separate inference worker with WebGPU; the full Q4 model download is about 413 MB. A real finite warm-up decision must complete before selection opens. The verified desktop browser completed worker warm-up in 550 ms (1.9 seconds including cached model loading); other hardware will vary.
+Open the URL printed by Vite. No account, API key or inference server is required. The repository includes the model and artwork, so the initial clone is substantial.
 
-```sh
-npm test       # combat, input/replay and AI contract checks
-npm run build # strict TypeScript check + static production build
-npm run preview
-```
+| Start mode | What happens |
+| :--- | :--- |
+| **Enter baseline practice** | Start with the local combat controller. No model download or WebGPU inference required. |
+| **Initialize hybrid Laya** | Accept the GPU notice, download about **413 MB** of model data, then wait for verification and a real warm-up decision. Requires WebGPU and substantial memory. |
 
-Node 22 is recommended. `.npmrc` uses npm's legacy peer resolver to avoid a known resolver crash with the selected toolchain. The lockfile records exact installed versions.
+Both modes use WebGL 2 for the arena. Laya runs in its own worker; its recovery path keeps combat active if inference stalls. There is no WASM inference fallback for the shipped graph. [Browser requirements and measurements →](docs/LAYA_BROWSER.md)
 
-## Play
+## Controls
 
-Choose **Your fighter** or **AI fighter** above the roster, then click a portrait. Both assignments are independent and mirror matches are supported. Each of the 21 delegates has a distinct five-stat build: power, speed, vitality, stamina and stamina recovery. Every build spends the same 500-point budget, with each stat between 85 and 115; power and vitality trade off directly. These stats change actual damage, movement, health, stamina capacity and regeneration; ordinary move timings and reach remain shared. Each delegate also has one fixed signature with unique mechanics, animation and sound. Signatures follow the selected character; there is no move selector. The bounded, side-swapped matchup audit and its limits are recorded in [the verification notes](docs/VERIFICATION.md). Clean hits now earn 14 meter (previously 10), so eight clean hits fill the gauge; taking a hit earns 3 and making the opponent block earns 5. A signature still spends 100 meter. Matches are best of three, 60 seconds per round, with a bounded deciding round for draws. Training uses an idle dummy and no round clock.
+| Move | Key | Move | Key |
+| :--- | :---: | :--- | :---: |
+| Move left / right | **A / D** | Light / heavy | **J / K** |
+| Jump / crouch | **W / S** | Guard | **Space** |
+| Dash | **L** | Throw / break | **U** |
+| Parry | **I** | Signature | **O** |
+| Pause | **Esc** | AI Cam | **C** |
 
-Default keyboard: **A/D** move, **W** jump, **S** crouch, **J** light, **K** heavy, **Space** guard, **L** dash, **U** throw/break, **I** parry, **O** special. Down + J is body; down + K is low; forward + J is anti-air; forward + K is overhead. Escape pauses and C opens AI Cam. Bindings, volume, effects and quality are saved locally. Gamepad is supported; touch controls are experimental.
+**Mix it up:** down + J → body strike · down + K → low · forward + J → anti-air · forward + K → overhead. J or K in the air performs an air kick.
 
-A match records every applied semantic input from the combat worker. Pause/resume use ordered worker barriers so ticks are not lost. Replay format v5 isolates the new movement, fighter stats and contact rules from earlier balance versions. The last five completed matches are retained locally; replay playback does not call the AI. Download replay JSON or use Record Clip to capture up to 60 seconds of video with the shared game audio mix and persistent fiction/controller labels. Video capture depends on browser MediaRecorder support.
+Land strikes to charge your signature; eight clean hits fill the meter. Key bindings are configurable, gamepads are supported, and touch controls are experimental.
 
-## Project layout
+## Inside the opponent
+
+**Laya + combat is an explicit hybrid.** A local controller reacts to delayed public match state up to 15 times per simulation second. The genuine Laya model independently proposes tactics; each proposal is checked against the current situation before it can execute.
+
+AI Cam shows the recommendation, the action actually chosen, its source, latency and public context. Neither layer reads your keyboard or hidden future state. The general Laya checkpoint is **not trained for this fighting game** and can propose passive choices; the local controller keeps the opponent active between inferences.
+
+[Model provenance and export parity](docs/LAYA_BROWSER.md) · [Combat verification](docs/VERIFICATION.md) · [Implementation contract](docs/IMPLEMENTATION_CONTRACT.md)
+
+## Built for the browser
+
+**React 19 + TypeScript · Three.js · Web Workers · ONNX Runtime Web · Web Audio · Vite**
 
 ```text
 apps/web/src/
-  ai/                  Browser Laya runtime, public-state combat director and baseline
-  audio/               Layered Web Audio foley, 21 signature cues and capture mix
-  components/          Selection, match/HUD, dialogs and results
-  game/                Combat worker/client, input, renderer, 24-pose playback and replay
+  ai/                  Laya worker, public-state adapter and combat director
+  audio/               Impact foley, signature cues and arena radio
+  components/          Menus, fighter selection, HUD and match flow
+  game/                Combat worker, controls, rendering and replays
 apps/web/public/
-  assets/              Generated portraits, arena and individual fighter sheets
-  models/laya/         Versioned client model manifest, chunks and tokenizer
+  assets/              Generated artwork, arena and WST identity
+  audio/               Recorded foley and licensed rock tracks
+  models/laya/         Pinned model, tokenizer and integrity manifest
 packages/
-  combat-core/src/     DOM-free deterministic simulation and move definitions
-  content/src/         User-selected roster and original fictional flavour text
-tools/laya/            Pinned full-model ONNX export and parity verification
-tests/                 Combat, AI and integration invariants
-docs/source/           Original PRD pack, retained as source material
-tools/deploy/         Local build and gh-pages branch publication
+  combat-core/src/     Deterministic simulation, moves and fighter stats
+  content/src/         Roster and original fictional flavour text
+tests/                 Combat, input, AI, rendering and audio checks
+tools/                 Model conversion, balance audit and local deployment
+docs/                  Technical notes, source brief and asset provenance
 ```
 
-## GitHub Pages
+<details>
+<summary><strong>Development, replays and deployment</strong></summary>
 
-The app uses relative asset URLs and supports project URLs such as `/WST/`. Source lives on `main`; the generated site is published to `gh-pages`. In GitHub, choose **Settings → Pages → Deploy from a branch → gh-pages → /(root)**. The Vite build runs locally instead of on a custom Actions runner. `.nojekyll` tells GitHub that the branch is already built; GitHub still runs its managed Pages deployment step. See [GitHub’s publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+```sh
+npm test              # Run the regression suite
+npm run build         # Type-check and generate dist/
+npm run preview       # Serve the production build locally
+npm run deploy:pages  # Test, build locally and publish dist to gh-pages
+```
 
-After committing source changes, run `npm run deploy:pages` locally. The script tests, builds and publishes only `dist` through a temporary Git worktree, preserving the source checkout. No client router or server fallback is needed.
+Source lives on **main**; the prebuilt website lives on **gh-pages** with `.nojekyll`. GitHub Pages serves the branch root. Builds run locally; GitHub still performs its managed Pages deployment step. Relative asset URLs support the `/WST/` project path.
 
-Model files are split into static chunks to stay below GitHub's individual file limit. The model increases clone/build/deployment size substantially; see [the Laya runtime notes](docs/LAYA_BROWSER.md) for exact sizes, pinned versions, numerical comparisons and browser limitations. The model executes client-side even though its files are downloaded over HTTP.
+The full model is split into integrity-checked chunks for static hosting. The complete site is approximately 640 MiB. Exact runtime limitations and pinned versions are in [the Laya notes](docs/LAYA_BROWSER.md).
 
-## Asset and model boundaries
+Replay format **v5** records every applied worker input and reconstructs both selected fighter profiles. The last five completed matches stay in local storage; replay playback makes no AI calls. Video capture depends on MediaRecorder support and includes game effects, not the separate radio track.
 
-Each delegate has 24 generated poses across three sheets: base strikes and guard, footwork/jump/crouch, and attack preparation/recovery with dedicated signature poses. The selected pair loads before combat starts. Movement uses deterministic acceleration, quick braking and direction changes, running jumps and air steering. Walking and dashing stop at body contact without displacing an idle opponent; authored attack knockback still applies. Normal attacks have shorter startup/recovery and an eight-tick input buffer. Movement animation advances independently of held-action ticks; small continuous weight shifts and landing compression bridge the generated poses, and rendering smooths the 60 Hz positions on higher-refresh displays. The camera stays anchored to the arena so the opponent cannot visually drag a stationary or retreating player through automatic panning/zooming. This is a 2.5D rendered-sprite pipeline, not artist-rigged 3D likeness meshes.
+The lockfile pins dependencies. `.npmrc` enables the legacy peer resolver to avoid a resolver issue in this toolchain.
 
-Audio combines 12 recorded CC0 foley samples from Kenney with original Web Audio synthesis: cloth and air on attack starts, body impact on contact, shoe sounds for footwork/landings, and a distinct signature cue for every delegate. Samples preload once; a shared compressor and limiter feed both playback and recorded clips. There are no cloned voices. Sources and licenses are in [the audio notes](docs/AUDIO.md).
+</details>
 
-Arena Radio bundles three licensed recorded rock instrumentals: Kevin MacLeod’s **Big Rock**, **Cool Rock**, and **Hotrock** (CC BY 4.0; kit, bass, and electric guitar). Play starts only on a user gesture; station switching and music volume are independent of fight effects. Tracks play locally with no stream, pause when the page is hidden, and the persistent tuner remains mounted between menus and matches. Players can also select an audio file they own from their device; it stays local and is never uploaded. Credits and licence text are in [the audio notes](docs/AUDIO.md).
+## Credits & creative notes
 
-The generated WST logo is mounted in the header and used for the favicon, touch icon and social previews. Static metadata includes a canonical URL, Open Graph/Twitter cards, VideoGame structured data and a sitemap targeting the expected GitHub Pages project URL. See [brand provenance](docs/BRAND.md).
+- **Character art:** 504 generated poses across 63 sheets, presented as animated **2.5D sprites**. [Artwork provenance](docs/ASSETS.md)
+- **WST identity:** original generated logo, favicon and social mark. [Brand notes](docs/BRAND.md)
+- **Sound:** Kenney CC0 foley plus original signature cues. **Radio:** Kevin MacLeod's *Big Rock*, *Cool Rock* and *Hotrock*, CC BY 4.0. [Sources and licences](docs/AUDIO.md)
+- **Laya:** pinned `convaiinnovations/laya` checkpoint, with its upstream Apache-2.0 licence and conversion notice included. [Runtime details](docs/LAYA_BROWSER.md)
 
-The base Laya checkpoint is not a trained fighting-game policy. Live and native tests found strongly passive, option-position-sensitive choices. The explicitly labelled **Laya + combat controller** therefore combines genuine model advice with a deterministic local controller that checks delayed public state up to 15 times per simulation second. It closes distance, answers visible threats and applies reachable attacks while Laya runs independently. Model requests start no faster than every 650 ms, adapt to measured latency and never overlap. Each recommendation is checked against fresh delayed context and current legality before use; an idle or unsuitable recommendation cannot freeze the opponent. A 30-second model timeout restarts the inference worker without pausing combat; two failed recovery attempts expose a manual retry. Baseline practice runs this local combat controller without Laya.
+All dialogue and quips are original game fiction. Stats describe arcade builds, not political ability. The game contains no real speeches or cloned voices.
 
-AI Cam separates the executed action and its source from the latest Laya recommendation, and shows the player action, distance, health, height, perception delay and decision counts. Both layers see delayed public state, excluding identity, keyboard state, buffered inputs and hidden randomness. This improves playability; it does not retrain Laya or demonstrate fighting competence in the original checkpoint. Numerical export parity only establishes that the conversion preserves output.
+---
 
-This is fictional arcade satire. All quips are original fiction; roles follow the user's supplied cast list rather than a verified current-officeholder directory. No real speeches, cloned voices, injuries, political ability ratings, telemetry service or accounts are included. The original PRD's server architecture and realistic mesh requirements are superseded by the user's client-only and approved rendered-sprite directions.
+<p align="center">
+  <strong>THE NEXT ROUND OF NEGOTIATIONS IS PERSONAL.</strong><br><br>
+  <a href="https://cristianexer.github.io/WST/"><strong>ENTER THE ARENA →</strong></a><br><br>
+  <sub>WST · Fictional arcade satire · Early access</sub>
+</p>
