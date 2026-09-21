@@ -1,0 +1,23 @@
+﻿move_id,name,input,startup_ticks,active_ticks,recovery_ticks,damage,stamina_cost,meter_cost,hit_level,hitstun_ticks,blockstun_ticks,phase,status,notes,guard_stamina_damage,nominal_reach_m,cancel_into,cancel_open_tick,cancel_close_tick
+light,Straight punch,J,7,2,13,45,4,0,high,16,10,V1,Proposed,Fast check; high guard blocks; crouch evades. Hit advantage +2; block advantage -4 on first active tick.,8,0.9,body,10,16
+body,Body punch,Down + J,10,3,17,60,6,0,mid,22,12,V1,Proposed,Both guards block; whiff punishable. No automatic counter selection.,11,0.85,heavy,15,22
+heavy,Heavy cross,K,18,3,25,115,12,0,mid,29,13,V1,Proposed,Long commitment; no cancellation on whiff.,21,1.15,,0,0
+low,Low kick,Down + K,14,3,23,65,8,0,low,24,13,V1,Proposed,Low guard required; standing guard loses to low.,12,1.25,,0,0
+overhead,Overhead strike,Forward + K,24,3,26,100,13,0,overhead,30,15,V1,Proposed,Standing guard required; visibly distinct wind-up.,18,1.05,,0,0
+anti_air,Rising strike,Forward + J,12,4,25,85,10,0,mid,30,13,V1,Proposed,Airborne hit triggers knockdown; no universal invulnerability.,15,0.95,,0,0
+air_kick,Air kick,K while airborne,10,4,18,70,8,0,overhead,23,13,V1,Proposed,"One per jump; recovery runs in air; landing adds max(remaining,6) recovery ticks.",13,1.15,,0,0
+throw,Conference throw,U at close range,12,2,30,105,12,0,throw,42,0,V1,Proposed,Requires grounded target within 0.65m; held grab-break window 12 ticks; no injury close-up.,0,0.65,,0,0
+throw_break,Break throw,U during capture window,0,1,18,0,0,0,defence,0,0,V1,Proposed,Both return to neutral at separated anchors. Available only during a telegraphed capture.,0,0,,0,0
+parry,Veto parry,I,3,5,24,0,10,0,defence,0,0,V1,Proposed,Catches mid/high/overhead only; excludes low and throw. Success adds 24-tick attacker stagger and 8-tick defender recovery.,0,0,,0,0
+special_veto,Diplomatic shield,O with shield equipped,8,30,18,0,0,100,special,0,0,V1,Proposed,Absorbs one non-throw hit during active window; expires after hit. On absorption both recover for 12 ticks; no extra damage.,0,0,,0,0
+special_papers,Paperwork burst,O with papers equipped,24,2,36,150,15,100,mid,42,18,V1,Proposed,Single short-range hit at 1.4m; paper particles are cosmetic; no projectile simulation in V1.,27,1.4,,0,0
+special_summit,Summit adjourned,O with summit equipped,28,3,40,180,18,100,mid,48,19,V2,Proposed,Short lunge capped at 0.9m; scripted recovery pose; no camera cut until move resolves. V2 content.,32,1.8,,0,0
+dash_forward,Forward dash,L + Forward,0,10,8,0,7,0,movement,0,0,V1,Proposed,0.8m displacement; no invulnerability; canonical root curve.,0,0,,0,0
+dash_back,Back dash,L + Back,0,10,10,0,8,0,movement,0,0,V1,Proposed,0.75m retreat; no invulnerability; collision and arena bounds still apply.,0,0,,0,0
+jump,Jump,W,4,32,8,0,5,0,movement,0,0,V1,Proposed,32-tick flight; 0.9m peak; lateral travel up to 0.8m from held direction; no double jump.,0,0,,0,0
+guard_high,High guard,Space,1,1,4,0,0,0,defence,0,0,V1,Proposed,Active phase loops while held; regenerates stamina at 8/s; blocks high/mid/overhead.,0,0,,0,0
+guard_low,Low guard,Space + Down,2,1,5,0,0,0,defence,0,0,V1,Proposed,Active phase loops while held; blocks low/mid; exposes overhead.,0,0,,0,0
+advance,Advance,D or A towards opponent,0,1,0,0,0,0,movement,0,0,V1,Proposed,"Held state; 1.8m/s; ends on release, collision, or higher-priority legal input.",0,0,,0,0
+retreat,Retreat,A or D away from opponent,0,1,0,0,0,0,movement,0,0,V1,Proposed,Held state; 1.45m/s; cannot exit arena.,0,0,,0,0
+crouch,Crouch,S,2,1,4,0,0,0,movement,0,0,V1,Proposed,Active phase loops; high attacks pass above canonical head volume; does not block automatically.,0,0,,0,0
+idle,Neutral idle,Release controls,0,1,0,0,0,0,neutral,0,0,V1,Proposed,Loop; guaranteed legal fallback when actor is neutral. Never overrides hitstun.,0,0,,0,0

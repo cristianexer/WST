@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "person_id": "UNVERIFIED-PERSON-PLACEHOLDER",
+  "display_name": "REPLACE AFTER VERIFICATION",
+  "catalogue_code": "US",
+  "office_title": null,
+  "official_source_url": null,
+  "verified_at": null,
+  "tenure_start": null,
+  "tenure_end": null,
+  "catalogue_snapshot_date": "2026-09-21",
+  "publication_status": "blocked",
+  "rights_review": "pending",
+  "likeness_review": "pending",
+  "avatar_asset_version": "NOT-PRODUCED",
+  "combat_profile_id": "shared_v1",
+  "asset_refs": {
+    "lod0": "assets/NOT-PRODUCED-lod0.glb",
+    "lod1": "assets/NOT-PRODUCED-lod1.glb",
+    "lod2": "assets/NOT-PRODUCED-lod2.glb",
+    "lod3": "assets/NOT-PRODUCED-lod3.glb",
+    "portrait": "assets/NOT-PRODUCED-portrait.webp"
+  },
+  "fiction_notice": "Fictional arcade satire. No endorsement implied."
+}

@@ -1,0 +1,14 @@
+import { publicAssetUrl } from './assets';
+import { createRoot } from 'react-dom/client';
+import '@fontsource/barlow/400.css';
+import '@fontsource/barlow/500.css';
+import '@fontsource/barlow/600.css';
+import '@fontsource/barlow/700.css';
+import '@fontsource/barlow-condensed/500.css';
+import '@fontsource/barlow-condensed/600.css';
+import '@fontsource/barlow-condensed/700.css';
+import '@fontsource/barlow-condensed/800.css';
+import App from './App';
+import './styles.css';
+document.documentElement.style.setProperty('--roster-atlas', `url(${publicAssetUrl('assets/roster-atlas.png')})`);
+createRoot(document.getElementById('root')!).render(<App/>);

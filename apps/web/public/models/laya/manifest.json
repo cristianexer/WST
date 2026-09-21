@@ -1,0 +1,117 @@
+{
+  "format": "wst-laya-decision-onnx-v1",
+  "checkpointRepository": "convaiinnovations/laya",
+  "checkpointRevision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+  "sourceRevision": "42626c348753fbb17572a813127df2278a1ec527",
+  "model": {
+    "bytes": 412706114,
+    "sha256": "92e9d098e37242793add274281d182fd0a022c718133dc15d2479f3160dce133",
+    "chunks": [
+      {
+        "url": "./laya-decision.onnx.part000",
+        "bytes": 25165824,
+        "sha256": "a713cccb8a54a8dd3c5d4b857e19b9a4273b67a87bbcf5877f4d39f6b8fb1991"
+      },
+      {
+        "url": "./laya-decision.onnx.part001",
+        "bytes": 25165824,
+        "sha256": "4127a100cb965f2f6402cf9d18da8e5dd2dab4a5c4758c94c632430513b47497"
+      },
+      {
+        "url": "./laya-decision.onnx.part002",
+        "bytes": 25165824,
+        "sha256": "9fa219b3e02922f2b400ad7b2860263f2539582ec57525e0dfc026849606929e"
+      },
+      {
+        "url": "./laya-decision.onnx.part003",
+        "bytes": 25165824,
+        "sha256": "41de3e895e114f91302bddf125a5c4e2bf62e049b5227b33b74664d4669ea04c"
+      },
+      {
+        "url": "./laya-decision.onnx.part004",
+        "bytes": 25165824,
+        "sha256": "c2da77085741af09fb1ef77f82a33633af8f15bf22db86cdf0a053c473257e0c"
+      },
+      {
+        "url": "./laya-decision.onnx.part005",
+        "bytes": 25165824,
+        "sha256": "961d6ca4c424a2c3c9cf1f3a0717b80fb8921f18839a5c558712fe764d55b575"
+      },
+      {
+        "url": "./laya-decision.onnx.part006",
+        "bytes": 25165824,
+        "sha256": "3c47d97960bd68c67c811a29adcc6c46e7d55d2cdc12f8c79a18e15d0a5f727f"
+      },
+      {
+        "url": "./laya-decision.onnx.part007",
+        "bytes": 25165824,
+        "sha256": "4a2285a8c0bade4a523f059586a0dd83906af63c163fb8643e42353ce3c0569a"
+      },
+      {
+        "url": "./laya-decision.onnx.part008",
+        "bytes": 25165824,
+        "sha256": "13f4bad51baadd626a8b0521ebb75ad20085ba92baa3f7da327cebe39288d18d"
+      },
+      {
+        "url": "./laya-decision.onnx.part009",
+        "bytes": 25165824,
+        "sha256": "a702cb2b693bda38f481b6ceedc01542e61eb9376ffa1a5b33750951a0ef5344"
+      },
+      {
+        "url": "./laya-decision.onnx.part010",
+        "bytes": 25165824,
+        "sha256": "fa6455b26de756863dfec425866f2a5da391a96d5c50c094e4dac7db2ab89a75"
+      },
+      {
+        "url": "./laya-decision.onnx.part011",
+        "bytes": 25165824,
+        "sha256": "b6133bde20d09839c08678c881bd1f3a168d8b85dfb4b2219a3cac7c6d2c1cba"
+      },
+      {
+        "url": "./laya-decision.onnx.part012",
+        "bytes": 25165824,
+        "sha256": "479fd7d8a34ff8ca3c7ac1bc7d55a08b9edd6303f9c7634437f17974c156d113"
+      },
+      {
+        "url": "./laya-decision.onnx.part013",
+        "bytes": 25165824,
+        "sha256": "d0b90e80d5ab40e84da6f63b08a9e35e010bebb67ae45c1825f0e03024ade4ef"
+      },
+      {
+        "url": "./laya-decision.onnx.part014",
+        "bytes": 25165824,
+        "sha256": "834f422f9dbf4fa07ad69ef7d083d3447111f90b396c84765e6e43d26bdb3f14"
+      },
+      {
+        "url": "./laya-decision.onnx.part015",
+        "bytes": 25165824,
+        "sha256": "922dcb53e11e98a555f590038afdbd1298ff62fd3ad83760d7c7f314cce413b8"
+      },
+      {
+        "url": "./laya-decision.onnx.part016",
+        "bytes": 10052930,
+        "sha256": "52fed6e3ac97c97afca11519cda322a1d718b70ffa94942b621e7a3d84442f48"
+      }
+    ]
+  },
+  "tokenizerId": "./tokenizer",
+  "tokenizerRevision": "1c5edc17a7acd8701df6fc341c0d179f1c62c982",
+  "maxLength": 320,
+  "headMaxLength": 192,
+  "choiceTemperatures": {
+    "choice:2": 1.9063563346862793,
+    "choice:3-5": 1.7601518630981445,
+    "choice:6-10": 1.0000158548355103,
+    "choice:11+": 0.10058280825614929
+  },
+  "precision": "int4",
+  "quantization": "matmul-nbits-int4-symmetric-block128",
+  "inputs": {
+    "inputIds": "input_ids",
+    "attentionMask": "attention_mask",
+    "markerPositions": "marker_pos",
+    "markerMask": "marker_mask",
+    "questionType": "qtype"
+  },
+  "logitsOutput": "logits"
+}

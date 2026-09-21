@@ -1,0 +1,351 @@
+{
+  "scope": "Side-swapped 12-second public-state controller exchanges. Diagnostic, not proof of competitive balance.",
+  "reports": [
+    {
+      "scenario": "ordinary",
+      "fighters": [
+        {
+          "id": "trump",
+          "games": 40,
+          "wins": 2,
+          "draws": 38,
+          "winShare": 0.525,
+          "meanHealth": 0.025
+        },
+        {
+          "id": "xi",
+          "games": 40,
+          "wins": 0,
+          "draws": 40,
+          "winShare": 0.5,
+          "meanHealth": 0.122
+        },
+        {
+          "id": "putin",
+          "games": 40,
+          "wins": 2,
+          "draws": 38,
+          "winShare": 0.525,
+          "meanHealth": 0.055
+        },
+        {
+          "id": "modi",
+          "games": 40,
+          "wins": 0,
+          "draws": 40,
+          "winShare": 0.5,
+          "meanHealth": 0.104
+        },
+        {
+          "id": "burnham",
+          "games": 40,
+          "wins": 2,
+          "draws": 38,
+          "winShare": 0.525,
+          "meanHealth": 0.051
+        },
+        {
+          "id": "macron",
+          "games": 40,
+          "wins": 4,
+          "draws": 30,
+          "winShare": 0.475,
+          "meanHealth": 0.117
+        },
+        {
+          "id": "merz",
+          "games": 40,
+          "wins": 0,
+          "draws": 40,
+          "winShare": 0.5,
+          "meanHealth": 0.031
+        },
+        {
+          "id": "meloni",
+          "games": 40,
+          "wins": 2,
+          "draws": 38,
+          "winShare": 0.525,
+          "meanHealth": 0.094
+        },
+        {
+          "id": "takaichi",
+          "games": 40,
+          "wins": 4,
+          "draws": 36,
+          "winShare": 0.55,
+          "meanHealth": 0.111
+        },
+        {
+          "id": "mbs",
+          "games": 40,
+          "wins": 0,
+          "draws": 40,
+          "winShare": 0.5,
+          "meanHealth": 0.044
+        },
+        {
+          "id": "erdogan",
+          "games": 40,
+          "wins": 0,
+          "draws": 38,
+          "winShare": 0.475,
+          "meanHealth": 0.095
+        },
+        {
+          "id": "lula",
+          "games": 40,
+          "wins": 0,
+          "draws": 40,
+          "winShare": 0.5,
+          "meanHealth": 0.08
+        },
+        {
+          "id": "carney",
+          "games": 40,
+          "wins": 6,
+          "draws": 34,
+          "winShare": 0.575,
+          "meanHealth": 0.145
+        },
+        {
+          "id": "sheinbaum",
+          "games": 40,
+          "wins": 4,
+          "draws": 36,
+          "winShare": 0.55,
+          "meanHealth": 0.122
+        },
+        {
+          "id": "lee",
+          "games": 40,
+          "wins": 2,
+          "draws": 26,
+          "winShare": 0.375,
+          "meanHealth": 0.145
+        },
+        {
+          "id": "prabowo",
+          "games": 40,
+          "wins": 0,
+          "draws": 30,
+          "winShare": 0.375,
+          "meanHealth": 0.01
+        },
+        {
+          "id": "ramaphosa",
+          "games": 40,
+          "wins": 6,
+          "draws": 34,
+          "winShare": 0.575,
+          "meanHealth": 0.163
+        },
+        {
+          "id": "albanese",
+          "games": 40,
+          "wins": 2,
+          "draws": 38,
+          "winShare": 0.525,
+          "meanHealth": 0.102
+        },
+        {
+          "id": "milei",
+          "games": 40,
+          "wins": 0,
+          "draws": 22,
+          "winShare": 0.275,
+          "meanHealth": 0.009
+        },
+        {
+          "id": "von-der-leyen",
+          "games": 40,
+          "wins": 6,
+          "draws": 34,
+          "winShare": 0.575,
+          "meanHealth": 0.165
+        },
+        {
+          "id": "kim",
+          "games": 40,
+          "wins": 6,
+          "draws": 34,
+          "winShare": 0.575,
+          "meanHealth": 0.164
+        }
+      ]
+    },
+    {
+      "scenario": "signatures",
+      "fighters": [
+        {
+          "id": "trump",
+          "games": 40,
+          "wins": 16,
+          "draws": 2,
+          "winShare": 0.425,
+          "meanHealth": 0.131
+        },
+        {
+          "id": "xi",
+          "games": 40,
+          "wins": 6,
+          "draws": 12,
+          "winShare": 0.3,
+          "meanHealth": 0.149
+        },
+        {
+          "id": "putin",
+          "games": 40,
+          "wins": 22,
+          "draws": 13,
+          "winShare": 0.713,
+          "meanHealth": 0.206
+        },
+        {
+          "id": "modi",
+          "games": 40,
+          "wins": 18,
+          "draws": 2,
+          "winShare": 0.475,
+          "meanHealth": 0.178
+        },
+        {
+          "id": "burnham",
+          "games": 40,
+          "wins": 20,
+          "draws": 6,
+          "winShare": 0.575,
+          "meanHealth": 0.145
+        },
+        {
+          "id": "macron",
+          "games": 40,
+          "wins": 26,
+          "draws": 0,
+          "winShare": 0.65,
+          "meanHealth": 0.197
+        },
+        {
+          "id": "merz",
+          "games": 40,
+          "wins": 26,
+          "draws": 2,
+          "winShare": 0.675,
+          "meanHealth": 0.18
+        },
+        {
+          "id": "meloni",
+          "games": 40,
+          "wins": 16,
+          "draws": 12,
+          "winShare": 0.55,
+          "meanHealth": 0.194
+        },
+        {
+          "id": "takaichi",
+          "games": 40,
+          "wins": 12,
+          "draws": 0,
+          "winShare": 0.3,
+          "meanHealth": 0.162
+        },
+        {
+          "id": "mbs",
+          "games": 40,
+          "wins": 27,
+          "draws": 3,
+          "winShare": 0.713,
+          "meanHealth": 0.165
+        },
+        {
+          "id": "erdogan",
+          "games": 40,
+          "wins": 10,
+          "draws": 12,
+          "winShare": 0.4,
+          "meanHealth": 0.173
+        },
+        {
+          "id": "lula",
+          "games": 40,
+          "wins": 32,
+          "draws": 0,
+          "winShare": 0.8,
+          "meanHealth": 0.272
+        },
+        {
+          "id": "carney",
+          "games": 40,
+          "wins": 14,
+          "draws": 12,
+          "winShare": 0.5,
+          "meanHealth": 0.231
+        },
+        {
+          "id": "sheinbaum",
+          "games": 40,
+          "wins": 16,
+          "draws": 0,
+          "winShare": 0.4,
+          "meanHealth": 0.19
+        },
+        {
+          "id": "lee",
+          "games": 40,
+          "wins": 16,
+          "draws": 2,
+          "winShare": 0.425,
+          "meanHealth": 0.207
+        },
+        {
+          "id": "prabowo",
+          "games": 40,
+          "wins": 20,
+          "draws": 4,
+          "winShare": 0.55,
+          "meanHealth": 0.096
+        },
+        {
+          "id": "ramaphosa",
+          "games": 40,
+          "wins": 14,
+          "draws": 14,
+          "winShare": 0.525,
+          "meanHealth": 0.24
+        },
+        {
+          "id": "albanese",
+          "games": 40,
+          "wins": 16,
+          "draws": 0,
+          "winShare": 0.4,
+          "meanHealth": 0.175
+        },
+        {
+          "id": "milei",
+          "games": 40,
+          "wins": 16,
+          "draws": 4,
+          "winShare": 0.45,
+          "meanHealth": 0.113
+        },
+        {
+          "id": "von-der-leyen",
+          "games": 40,
+          "wins": 6,
+          "draws": 14,
+          "winShare": 0.325,
+          "meanHealth": 0.194
+        },
+        {
+          "id": "kim",
+          "games": 40,
+          "wins": 14,
+          "draws": 0,
+          "winShare": 0.35,
+          "meanHealth": 0.251
+        }
+      ]
+    }
+  ]
+}

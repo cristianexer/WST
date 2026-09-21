@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Summit Showdown replay manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "replay_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "tick_rate": {
+      "const": 60
+    },
+    "simulation_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "moveset_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "model_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "roster_snapshot": {
+      "type": "string",
+      "format": "date"
+    },
+    "arena_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "player_avatar_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "opponent_avatar_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "seed": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4294967295
+    },
+    "asset_manifest_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "initial_state_file": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "input_events_file": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "applied_decisions_file": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "snapshots_file": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "snapshot_interval_ticks": {
+      "const": 120
+    },
+    "controller_mode": {
+      "enum": [
+        "human_vs_laya",
+        "human_vs_baseline",
+        "recorded_exhibition"
+      ]
+    },
+    "verified_competitive_result": {
+      "const": false
+    },
+    "fiction_notice": {
+      "const": "Fictional arcade satire. No endorsement implied."
+    },
+    "illustrative_example": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "replay_id",
+    "created_at",
+    "tick_rate",
+    "simulation_version",
+    "moveset_version",
+    "model_version",
+    "roster_snapshot",
+    "arena_id",
+    "player_avatar_id",
+    "opponent_avatar_id",
+    "seed",
+    "asset_manifest_sha256",
+    "initial_state_file",
+    "input_events_file",
+    "applied_decisions_file",
+    "snapshots_file",
+    "snapshot_interval_ticks",
+    "controller_mode",
+    "verified_competitive_result",
+    "fiction_notice",
+    "illustrative_example"
+  ]
+}

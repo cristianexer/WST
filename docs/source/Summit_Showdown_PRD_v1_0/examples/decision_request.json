@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "request_id": "example-request-001",
+  "match_id": "example-match-001",
+  "round_id": 1,
+  "request_tick": 246,
+  "observed_tick": 234,
+  "decision_epoch": 3,
+  "expires_at_tick": 264,
+  "policy_version": "EXAMPLE-PIN-AFTER-EVALUATION",
+  "candidate_generation_version": "candidate-v1",
+  "observation": {
+    "self": {
+      "health": 690,
+      "stamina": 66,
+      "meter": 100,
+      "grounded": true,
+      "visible_action": "idle",
+      "phase": "neutral",
+      "facing": 1
+    },
+    "opponent": {
+      "health": 740,
+      "stamina": 52,
+      "meter": 46,
+      "grounded": true,
+      "visible_action": "heavy",
+      "phase": "startup",
+      "facing": -1
+    },
+    "distance_mm": 920,
+    "self_to_wall_mm": 4200,
+    "opponent_to_wall_mm": 8880,
+    "self_can_act": true,
+    "recent_visible_opponent_actions": [
+      "heavy",
+      "retreat",
+      "heavy",
+      "guard_high",
+      "heavy"
+    ]
+  },
+  "legal_actions": [
+    "guard_high",
+    "retreat",
+    "light",
+    "idle",
+    "heavy",
+    "dash_forward",
+    "parry",
+    "special_veto"
+  ]
+}

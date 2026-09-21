@@ -1,0 +1,447 @@
+{
+  "date": "2026-09-21",
+  "poseCount": 504,
+  "sheets": [
+    {
+      "asset": "apps/web/public/assets/fighters/albanese-base-v2.png",
+      "bytes": 1954510,
+      "sha256": "c33985f65b9e0a7c482432e2ae57a6bd93c6aa9d6adb4012539fc596d4817996",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-8ed8fff2-26a6-4c6e-a36a-18256747cfc3.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/albanese-combat.png",
+      "bytes": 1984233,
+      "sha256": "864d8e77ae647f0791c3c6eb808ae1b636453ccc601e8d0732baf931d49f09f9",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-b7375854-e2c9-4bfb-b605-238dd1fcc2d0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/albanese-motion.png",
+      "bytes": 2078304,
+      "sha256": "99ce4d4a4c96a72ba347ab3e17c08950fb94b2b7f51372f0df5c7b0a1242ef8c",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-0ba63849-1f10-4ca8-826f-6712a29954fb.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/burnham-base-v2.png",
+      "bytes": 1980424,
+      "sha256": "d5c95c5b74905f37ce27ef9ce033a238517253124046e602f0c4784a963f3535",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-a46440fa-06a1-4277-afc4-1cda931318f8.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/burnham-combat.png",
+      "bytes": 2042774,
+      "sha256": "7bf2c84872657cc0e0ce544c85a536bffd30b6e52d92e0740dc65f2fbbf71475",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-07098137-4b6b-4b42-b7e9-1e5d70919bee.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/burnham-motion.png",
+      "bytes": 1988989,
+      "sha256": "6b93061cd08880c56e5c0b5a9f4986dc6150e46068d6a0a625f992a0f004b448",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-594de606-b535-47fc-9109-5bc8be2eff76.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/carney-base-v2.png",
+      "bytes": 1947279,
+      "sha256": "20c200114d409bd092b381ccf5b6d1a92fc4cc0bde6379ecc6054e6aa5825784",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-faa4907b-db9d-4fee-a502-7068219b09e0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/carney-combat.png",
+      "bytes": 1986939,
+      "sha256": "e80301e01b3f8d1eb600c343f429c1be05222d453770e3bb834ae9af029930df",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-9d0233c5-7f72-46fe-8a1a-58d9f4862eb8.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/carney-motion.png",
+      "bytes": 2008645,
+      "sha256": "8716cf02426a8e61430399064079b1c3b4bbc10f77325ae6c51a96282fe6991b",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-05536ff8-c516-4673-affa-cb94858345c1.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/erdogan-base-v2.png",
+      "bytes": 1995733,
+      "sha256": "a0f2a0726736323b57002521f0c8af49db189488e246818bf56f64f2198cb763",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-086034cc-7f15-452e-9142-eb40ceab39b6.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/erdogan-combat.png",
+      "bytes": 1981489,
+      "sha256": "d0c3e88746432e004aedbfda0d8c2a1ce5a6353d8e6d28844d0133d6c09a4fcf",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-6661d6eb-cf5a-4ab9-a984-b401c76748ec.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/erdogan-motion.png",
+      "bytes": 1976044,
+      "sha256": "723d0cce2ab188482d377959c59b1f5515441dbf697c83fb877dc6008bd20d1e",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-91c741a0-152b-4559-8c3f-65820c8c194c.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/kim-base-v2.png",
+      "bytes": 1962038,
+      "sha256": "baf45ff268b912ca3d1cc6cc62d6f298c4fc85d14e607bd77f3bda6d545e1bb3",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-de0d066a-f6d4-493f-99a2-cd2a678c87af.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/kim-combat.png",
+      "bytes": 1981505,
+      "sha256": "53b24471454050712e05769a4ca542596c82704f7727c579161c41857bab6289",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-a91724f3-c5db-4ffd-93d2-777324b0d5d1.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/kim-motion.png",
+      "bytes": 2071150,
+      "sha256": "8ec95252cb8bb7a244bc13d2469e3f3f4934bec79ac071f2c3a8cfafea98d68f",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-b259a48f-ec10-49e7-bac6-b99d78f8fc4c.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lee-base-v2.png",
+      "bytes": 1962979,
+      "sha256": "f07078bd5b35c5ac9b5cf9d5743a31f9331dcc8d1ad62bfa842a7faec4f7b1ae",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-496ac070-f9ea-41a0-a1d1-135ec9a697f0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lee-combat.png",
+      "bytes": 2081923,
+      "sha256": "29cbe8637a4f47fccdcb6b45d04da60fcd773b41bb70c9968d404e217b92dd91",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-40f73f80-6380-41d7-82be-28029b16d3bf.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lee-motion.png",
+      "bytes": 2003578,
+      "sha256": "022c2ab665ec771e2f4cc83574394e901dd0c6ba84ba71c45d9323872f044d4d",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-1a29027f-c793-4501-bc7f-14ae592de887.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lula-base-v2.png",
+      "bytes": 2000748,
+      "sha256": "129134b120f95a25b46fb4ed4cb43cf7388d84be6947dc979f8974a4bca69456",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-05533fb4-0c2f-4d75-8581-74f071b11a99.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lula-combat.png",
+      "bytes": 2050661,
+      "sha256": "9be6084129156931379e2757a1b456c85e286351ebf8e39aa27ca531f9c35482",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-8fee5401-acb0-485f-850d-7b9d8eb98c05.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/lula-motion.png",
+      "bytes": 2057576,
+      "sha256": "150c3f59fbfba0b2d2c0adcae9a118be8a68aec1f5e50eb31aed93bb59714e5b",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-22f9402b-513b-42ac-8a7d-3c9962a9c3ad.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/macron-base-v2.png",
+      "bytes": 1995641,
+      "sha256": "8124a51e80058de34976ff9d75f5f05facf1749f0235e541f51388e21d23bcce",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-482f431c-4148-4d3f-a7d7-aed3eefbe5a0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/macron-combat.png",
+      "bytes": 2016456,
+      "sha256": "291abf806858dc9c04c7bbdc0781f45a9e056aa4f0237b11e02f852aafd9fc00",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-20ec4d72-b43c-42b3-8d79-9a2f3e04fa77.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/macron-motion.png",
+      "bytes": 1969033,
+      "sha256": "8f6587a73f56670f3f3ee69ad57aa11c5b46a9a92fe0190ed6a66af04dbb6779",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-8285b769-ea16-4b65-976a-6575c73452f9.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/mbs-base-v2.png",
+      "bytes": 2182024,
+      "sha256": "c34b2f304a4819c1d7860d0cbe4dc0ff6c02a32eb6e41c19f30d1a9b7a5c16e6",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-90566e0b-dded-41a4-afc0-03e039f3c0dc.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/mbs-combat.png",
+      "bytes": 2287353,
+      "sha256": "5366b5ec8d5e0d79d325b78627e114279326a9018799f4572a68f98bee8f31a3",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-b67f1889-1743-44ea-a7cd-72a96d1e59d7.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/mbs-motion.png",
+      "bytes": 2182612,
+      "sha256": "261162b2604fa890be4e135042a184fe69ac8566ff1cc74d5319f128c33422c6",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-2c8fb4ce-c1ff-4f10-8396-2d3baf3f332b.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/meloni-base-v2.png",
+      "bytes": 1952436,
+      "sha256": "d767f89d9d3e5a887dc8c401543c32558b082a517b43575cade99e4d33728754",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-31728d5b-64b1-42bb-82df-59394297e9e6.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/meloni-combat.png",
+      "bytes": 2037463,
+      "sha256": "3e27fc1f49ce8f828521e5155083db458a72acbde99f86ee0ecf3df57e788e07",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-0907da17-57e8-4630-a973-c880d41bc4e0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/meloni-motion.png",
+      "bytes": 1998534,
+      "sha256": "59d37d88d6dc1c12755c7d06032a92131ae25411389afcce9fac4d65ecac54db",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-72a964af-a317-4ccb-92b1-89d4974b88fe.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/merz-base-v2.png",
+      "bytes": 1924172,
+      "sha256": "6f2f6ef8b571f433a3f2385cffad18373f3abd60ccf1dd014c6c2c75b32ed949",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-a9e62c2a-abf4-446e-b6e7-22b29aa0aa83.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/merz-combat.png",
+      "bytes": 1992552,
+      "sha256": "562565aab10da60d6c77d13efdfee8629ca64acec024a34b11da563d0464a127",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-74ab8299-a9b0-46f3-9005-e59c17ed32f3.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/merz-motion.png",
+      "bytes": 2037101,
+      "sha256": "2d9ab27624277e08ef82b9949f530f2988b791b7a78ef3003981d49849873cf0",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-84f9a271-661e-493e-991a-f8810c6e8897.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/milei-base-v2.png",
+      "bytes": 2034921,
+      "sha256": "82c52990541e59b1bba8588e9b921e591a6d65e0e14a589f0221087f147684ad",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-661263d5-f8ae-47b2-85cb-3bc65c562140.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/milei-combat.png",
+      "bytes": 2106600,
+      "sha256": "84028d558ba200044c4eae2562031050a570a646f084c8c7ba5f50b68359d2fe",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-19319546-c7e4-44de-97ff-116c99e905f8.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/milei-motion.png",
+      "bytes": 2059196,
+      "sha256": "183730ff9e356b759a9e1fd9da01303e5c073cfd2d309e6799588e52f9d84ea2",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-620e11cb-0242-41d2-8c2a-87e4fa453041.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/modi-base-v2.png",
+      "bytes": 2089781,
+      "sha256": "193a10c5e3050c34effb2933e3849c93b61f13435d04bd3a9188074155cc3059",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-bcfd83cc-523e-41ca-94e9-45ab355f3a93.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/modi-combat.png",
+      "bytes": 2111672,
+      "sha256": "29188961539518c2ceeac25527d3de19d8c1237c78a9e465e0507d882d8f4f3d",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-82ab92e4-7cc7-4c72-a452-3195161806f8.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/modi-motion.png",
+      "bytes": 2078132,
+      "sha256": "2d08da294ce15508ab4e2f45f9c825d8c0ca119e8e3bba797cff1399356e6ea5",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-952730fb-2ab7-46ca-aa9f-aa336d160602.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/prabowo-base-v2.png",
+      "bytes": 2069926,
+      "sha256": "5737edc96eb7f23771ad66375072f0eb02de111feb7ba90421d24717224681ed",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-088983dd-3e64-4d29-89e9-3d41645973be.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/prabowo-combat.png",
+      "bytes": 2086057,
+      "sha256": "8b1e1edeee66571eb1a6ebdf248ddbda26ce3aeafb95717a745a8bdeceb4b8c6",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-48f129d5-7b58-4a3f-9d34-258693361bfb.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/prabowo-motion.png",
+      "bytes": 2065766,
+      "sha256": "d737912a067fa775189a46f649bf76d180ccf734b72efa7657c12a1ef3c150ea",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-4c5162b8-1f9e-4713-ab0d-56a59e4b7fd7.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/putin-base-v2.png",
+      "bytes": 1949910,
+      "sha256": "f3e83ed919178d44ce1a0bd07c4bfb6b1d657e9f24b45d23508618bdc1349f80",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-d9ebf093-98e4-4f96-91c0-8455f765dd82.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/putin-combat.png",
+      "bytes": 2057888,
+      "sha256": "1fe144b4077b13da9cfbbeb0d6408974c234f532d282fe9da5149783f95c0b5c",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-9a74ecc1-5c4c-40ba-a377-d37998b4a3f3.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/putin-motion.png",
+      "bytes": 1903810,
+      "sha256": "a5740de960a79bbbee840e1b5505deafdcfa9d78b9b0d0abdab1e78f8f776b12",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-6763ebb3-18b5-4866-93f6-da0bee43e8f5.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/ramaphosa-base-v2.png",
+      "bytes": 2004229,
+      "sha256": "30d4ee599be16ae9b99cb3a38b3f234721ec80c6a4177c4137ba91afd972753c",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-7beb0a65-749c-4a6a-a93b-f2d9f9c112d4.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/ramaphosa-combat.png",
+      "bytes": 2106989,
+      "sha256": "d6983a132e22e0eb595fee329f843c501aa36b8960f4c0c2938b4dbaf132b240",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-8231510e-c914-4580-aab1-0a9963404db0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/ramaphosa-motion.png",
+      "bytes": 2020673,
+      "sha256": "93fbcb449780ab9e78f09bd49b574df5033d594c7e395bef933bdfcb04439c3e",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-b9a49642-94d3-4618-b343-a3870f70b679.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/sheinbaum-base-v2.png",
+      "bytes": 1958070,
+      "sha256": "6b22401a83b4378120eb452559e159a65c6cb1d5928e602644feade4e41e7679",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-71800ac5-5f72-458d-b78a-c446a82b30b6.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/sheinbaum-combat.png",
+      "bytes": 2014796,
+      "sha256": "e399a7400fca49e061f06958bb1897cc6bdfa49fab05dac2b45f79943291b43d",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-de37c4d0-9665-4a06-a29b-02d48ffa2c85.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/sheinbaum-motion.png",
+      "bytes": 1962366,
+      "sha256": "a46ee2909b59e3f9ecda5b670f16fec8951151e611431371a50708c2febaf59b",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-ada773f0-417c-47a4-a76a-a85c4c61d543.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/takaichi-base-v2.png",
+      "bytes": 1998120,
+      "sha256": "dcdce7fd2cbdd0d13d0789a530b4f542eae40bd0a37e8053eb29d39ca711316a",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-38664cc2-54bf-49e7-96c1-fc6d96f90847.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/takaichi-combat.png",
+      "bytes": 2074758,
+      "sha256": "05e43dd8f5c575c6626060482a35243d283d8d8eb20e7414cb208ffccdd81ff6",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-37830545-9724-4e42-8cf2-c250ce655227.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/takaichi-motion.png",
+      "bytes": 2011204,
+      "sha256": "3cac6966c31c7bc302c46400df1354f3edcfe7774e2f3631abad9487190310f5",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-cd1d3bfc-0848-4457-90e3-7a97ea09ab6f.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/trump-base-v2.png",
+      "bytes": 1970565,
+      "sha256": "460e87a2c1bb89a7e237c005a40c73feb2bfe9a84e50b0d0cea18476882718cd",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-0cae1295-f653-47d8-8bc0-d0b7cc21e1e0.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/trump-combat.png",
+      "bytes": 2018716,
+      "sha256": "ef923ff602c13705b7552ef812e2974c895c9e118ea9a9d3437e0bb0cb4bb6d4",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-38d25b42-aa3d-4bb0-a1bc-31263fcbd921.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/trump-motion.png",
+      "bytes": 2015944,
+      "sha256": "9d982fc6bb3b8b17a4e60c53453ddc7a55d3ec1e39768bc8f167f5d59461ee01",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-9e4ee82c-2a0a-4a2b-873d-1a9a98c374b2.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/von-der-leyen-base-v2.png",
+      "bytes": 1909698,
+      "sha256": "187a775099e27c0e401ca87da7ba3cd26cd5db5847eca37fad556600eb343e41",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-43f66a5b-b3d7-4421-9fd3-ae04b5b4b9cb.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/von-der-leyen-combat.png",
+      "bytes": 1957668,
+      "sha256": "ecf5182d7a770c7cd9b7fc26265c97143f3d0c575b74fa8c6c85dbadb56c7f99",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-d3a6ba99-90f2-473f-8b28-17b0555e1921.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/von-der-leyen-motion.png",
+      "bytes": 1931375,
+      "sha256": "377499ec384fc1b1798a0c115a63b20bd9cf2c703d4b3720f28e470dfca11e1d",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-1bd1587d-b105-4182-ad4e-144056768fc2.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/xi-base-v2.png",
+      "bytes": 2009643,
+      "sha256": "fd23887f819ed00b383b7ef622336c468b052049ce7a6042b5fc23627e040b56",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-4462ef6c-9614-414c-a16d-653b19f5079c.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/xi-combat.png",
+      "bytes": 2043565,
+      "sha256": "d7eb88603c5e8dfe94cbfb408494564cfc4913a05ce9e85ee88cbca3787cd447",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-4865965c-587e-4e48-a7d5-c8ed6603a3c2.png",
+      "generator": "built-in imagegen"
+    },
+    {
+      "asset": "apps/web/public/assets/fighters/xi-motion.png",
+      "bytes": 2014800,
+      "sha256": "927cb07882b2c002528a80f1063188c45649b05d39238f3abe44c49a3e91909a",
+      "generatedSource": "/Users/cristianexer/.codex/generated_images/01a0c4b5-39af-7bf1-8c0e-6d7f9bb9587a/exec-4f5eb7b3-b207-4d14-8dc8-e3107989cdd3.png",
+      "generator": "built-in imagegen"
+    }
+  ]
+}

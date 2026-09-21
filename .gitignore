@@ -1,0 +1,14 @@
+node_modules/
+dist/
+output/
+.DS_Store
+*.log
+.env
+.playwright-mcp/
+__pycache__/
+.venv*/
+
+.cache/
+
+# Native inference diagnostic session scratch
+:memory:.ses

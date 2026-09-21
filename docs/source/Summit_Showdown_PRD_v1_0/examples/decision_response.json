@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "request_id": "example-request-001",
+  "match_id": "example-match-001",
+  "round_id": 1,
+  "observed_tick": 234,
+  "decision_epoch": 3,
+  "expires_at_tick": 264,
+  "policy_version": "EXAMPLE-PIN-AFTER-EVALUATION",
+  "selected_action": "guard_high",
+  "policy_scores": {
+    "guard_high": 0.36,
+    "retreat": 0.22,
+    "light": 0.14,
+    "idle": 0.08,
+    "heavy": 0.06,
+    "dash_forward": 0.04,
+    "parry": 0.04,
+    "special_veto": 0.06
+  },
+  "timing_ms": {
+    "queue": 3,
+    "preprocess": 5,
+    "model": 40,
+    "server_total": 50
+  },
+  "controller_source": "laya",
+  "illustrative_example": true
+}

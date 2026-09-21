@@ -1,0 +1,11 @@
+﻿work_package_id,work_package,owner,low_person_days,high_person_days,gate,status,basis
+WP01,Combat prototype and headless simulator,Gameplay engineer,12,20,G1,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP02,"Laya adapter, data, evaluation and serving",ML engineer,12,22,G2,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP03,"Web shell, selection, HUD and accessibility",Frontend engineer,8,14,G3,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP04,Canonical rig and shared animation polish,Technical animator,12,22,G3,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP05,Two leader likeness packs,Character artist,16,30,G3,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP06,Summit arena and WebGL lighting,Environment/graphics artist,8,15,G3,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP07,"Audio, VFX and camera treatment",Technical/sound artist,6,12,G4,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP08,"Replay, capture and AI Cam",Gameplay/frontend engineer,8,14,G4,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP09,"Performance, security and cross-browser QA",QA + engineering,10,18,G5,Not started,Author planning assumption; not a supplier quote or delivery commitment.
+WP10,"Release editorial, rights review and video",Producer + specialist counsel,4,8,G5,Not started,Author planning assumption; not a supplier quote or delivery commitment.

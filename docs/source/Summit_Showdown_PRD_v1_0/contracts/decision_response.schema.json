@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Summit Showdown decision response (normalised boundary)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "match_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "round_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+    },
+    "observed_tick": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "decision_epoch": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "expires_at_tick": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "selected_action": {
+      "enum": [
+        "light",
+        "body",
+        "heavy",
+        "low",
+        "overhead",
+        "anti_air",
+        "air_kick",
+        "throw",
+        "throw_break",
+        "parry",
+        "special_veto",
+        "special_papers",
+        "dash_forward",
+        "dash_back",
+        "jump",
+        "guard_high",
+        "guard_low",
+        "advance",
+        "retreat",
+        "crouch",
+        "idle"
+      ]
+    },
+    "policy_scores": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 16,
+      "additionalProperties": false,
+      "properties": {
+        "light": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "body": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "heavy": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "low": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "overhead": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "anti_air": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "air_kick": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "throw": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "throw_break": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "parry": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "special_veto": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "special_papers": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "dash_forward": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "dash_back": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "jump": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "guard_high": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "guard_low": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "advance": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "retreat": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "crouch": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "idle": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "timing_ms": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "queue": {
+          "type": "number",
+          "minimum": 0
+        },
+        "preprocess": {
+          "type": "number",
+          "minimum": 0
+        },
+        "model": {
+          "type": "number",
+          "minimum": 0
+        },
+        "server_total": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "queue",
+        "preprocess",
+        "model",
+        "server_total"
+      ]
+    },
+    "controller_source": {
+      "enum": [
+        "laya",
+        "baseline",
+        "fallback"
+      ]
+    },
+    "illustrative_example": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "match_id",
+    "round_id",
+    "observed_tick",
+    "decision_epoch",
+    "expires_at_tick",
+    "policy_version",
+    "selected_action",
+    "policy_scores",
+    "timing_ms",
+    "controller_source",
+    "illustrative_example"
+  ]
+}

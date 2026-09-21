@@ -1,0 +1,112 @@
+.arena-radio {
+  --radio-accent: #8bd4dd;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(125px, 1fr) auto auto auto auto;
+  align-items: center;
+  gap: 8px;
+  color: #dce7e9;
+  font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+}
+
+.arena-radio-ident,
+.arena-radio-now-playing,
+.arena-radio-controls,
+.arena-radio-volume {
+  display: flex;
+  align-items: center;
+}
+
+.arena-radio-ident {
+  gap: 5px;
+  color: var(--radio-accent);
+  letter-spacing: .09em;
+}
+
+.arena-radio-ident div { display: grid; line-height: .9; gap: 3px; }
+.arena-radio-ident span { font-size: 9px; font-weight: 700; }
+.arena-radio-ident strong { color: #f4fafb; font-size: 12px; letter-spacing: .07em; }
+
+.arena-radio-now-playing {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 5px;
+  align-items: center;
+  line-height: 1;
+}
+
+.arena-radio-now-playing > span {
+  grid-row: 1 / span 2;
+  color: #849294;
+  border: 1px solid #516164;
+  padding: 2px 4px;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .1em;
+}
+
+.arena-radio-now-playing > span.on-air { color: #0b181a; background: var(--radio-accent); border-color: var(--radio-accent); }
+.arena-radio-now-playing strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 11px; letter-spacing: .055em; }
+.arena-radio-now-playing small { overflow: hidden; color: #87979a; text-overflow: ellipsis; white-space: nowrap; font-size: 8px; letter-spacing: .08em; }
+
+.arena-radio-controls { gap: 2px; }
+.arena-radio-controls button {
+  width: 25px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #c5d1d4;
+  background: transparent;
+  border: 1px solid #405054;
+  cursor: pointer;
+}
+.arena-radio-controls button:hover { color: #071012; background: var(--radio-accent); border-color: var(--radio-accent); }
+.arena-radio-controls .arena-radio-play { color: #091416; background: #dce7e9; border-color: #dce7e9; }
+.arena-radio-controls .arena-radio-play:hover { background: var(--radio-accent); border-color: var(--radio-accent); }
+
+.arena-radio-volume { gap: 4px; color: #96a7aa; }
+.arena-radio-volume input { width: 56px; accent-color: var(--radio-accent); }
+.arena-radio-volume input:disabled { opacity: .45; cursor: not-allowed; }
+
+.arena-radio-select select {
+  max-width: 104px;
+  padding: 3px 16px 3px 5px;
+  color: #bbcccf;
+  background: #111c1f;
+  border: 1px solid #405054;
+  font: 700 10px/1 'Barlow Condensed', sans-serif;
+  letter-spacing: .06em;
+}
+.arena-radio-file { display: none; }
+.arena-radio-upload {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 5px;
+  color: #b8c8cb;
+  background: #111c1f;
+  border: 1px solid #405054;
+  font: 700 9px/1 'Barlow Condensed', sans-serif;
+  letter-spacing: .06em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.arena-radio-upload:hover { color: #071012; background: var(--radio-accent); border-color: var(--radio-accent); }
+.arena-radio-error { color: #ffad72; font-size: 9px; letter-spacing: .06em; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+@media (max-width: 1000px) {
+  .arena-radio { grid-template-columns: auto auto auto auto; }
+  .arena-radio-now-playing { display: none; }
+  .arena-radio-volume { display: none; }
+}
+
+@media (max-width: 640px) {
+  .arena-radio-ident > div { display: none; }
+  .arena-radio-select select { max-width: 88px; }
+  .arena-radio-upload span { display: none; }
+  .arena-radio-upload { width: 25px; justify-content: center; padding: 0; }
+}

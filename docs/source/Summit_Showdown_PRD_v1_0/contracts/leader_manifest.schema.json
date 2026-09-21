@@ -1,0 +1,206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Summit Showdown leader manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "person_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "catalogue_code": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8
+    },
+    "office_title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "official_source_url": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "verified_at": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tenure_start": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tenure_end": {
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "catalogue_snapshot_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "publication_status": {
+      "enum": [
+        "draft",
+        "blocked",
+        "published",
+        "archived"
+      ]
+    },
+    "rights_review": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    },
+    "likeness_review": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ]
+    },
+    "avatar_asset_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "combat_profile_id": {
+      "const": "shared_v1"
+    },
+    "asset_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lod0": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "lod1": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "lod2": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "lod3": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "portrait": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "lod0",
+        "lod1",
+        "lod2",
+        "lod3",
+        "portrait"
+      ]
+    },
+    "fiction_notice": {
+      "const": "Fictional arcade satire. No endorsement implied."
+    }
+  },
+  "required": [
+    "schema_version",
+    "person_id",
+    "display_name",
+    "catalogue_code",
+    "office_title",
+    "official_source_url",
+    "verified_at",
+    "tenure_start",
+    "tenure_end",
+    "catalogue_snapshot_date",
+    "publication_status",
+    "rights_review",
+    "likeness_review",
+    "avatar_asset_version",
+    "combat_profile_id",
+    "asset_refs",
+    "fiction_notice"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "publication_status": {
+            "const": "published"
+          }
+        },
+        "required": [
+          "publication_status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "official_source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "verified_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "office_title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rights_review": {
+            "const": "approved"
+          },
+          "likeness_review": {
+            "const": "approved"
+          }
+        }
+      }
+    }
+  ]
+}

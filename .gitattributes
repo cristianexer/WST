@@ -1,0 +1,9 @@
+*.png binary
+*.bin binary
+*.wasm binary
+*.onnx binary
+
+*.onnx.part* binary
+
+# Preserve the original PRD pack CRLF files without false whitespace errors.
+docs/source/** whitespace=trailing-space,space-before-tab,cr-at-eol

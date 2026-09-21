@@ -1,0 +1,19 @@
+{
+  "name": "WST — World Summit Tournament",
+  "short_name": "WST",
+  "description": "A fictional browser fighting game with original signatures and a local AI opponent.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b0e13",
+  "theme_color": "#0b0e13",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
